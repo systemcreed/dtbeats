@@ -1,0 +1,347 @@
+.draw-page {
+    color: #eee8f3;
+    max-width: 1120px;
+    margin: auto;
+    padding: 38px 28px 130px;
+    line-height: 1.65
+}
+
+.draw-nav {
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    display: flex
+}
+
+.draw-nav>.signature {
+    font-size: 42px
+}
+
+.draw-nav>a:last-child {
+    color: #c8bdcf;
+    align-items: center;
+    gap: 8px;
+    font-size: .875rem;
+    display: flex
+}
+
+.draw-heading {
+    padding: 70px 0 36px
+}
+
+.draw-heading h1 {
+    letter-spacing: -.035em;
+    margin: 18px 0;
+    font: 400 clamp(3rem,8vw,5.4rem)/1.1 DT Serif,Georgia,serif
+}
+
+.draw-heading>p:not(.eyebrow) {
+    color: #c9bad4;
+    font-size: 1.15rem
+}
+
+.draw-rules-link {
+    border-bottom: 1px solid #ac86bb55;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    font-size: .875rem;
+    display: inline-flex
+}
+
+.draw-prizes {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 16px;
+    margin: 0 0 52px;
+    display: grid
+}
+
+.draw-prize {
+    background: linear-gradient(135deg,#b798d013,#14111999);
+    border: 1px solid #c3a5d332;
+    border-radius: 13px;
+    padding: 28px 24px
+}
+
+.draw-prize:last-child {
+    background: linear-gradient(135deg,#d8bc7e13,#14111999);
+    border-color: #d8bc7e36
+}
+
+.draw-prize>span {
+    letter-spacing: .13em;
+    color: #c6aecf;
+    font-size: .75rem
+}
+
+.draw-prize h2 {
+    margin: 15px 0;
+    font: 400 1.65rem/1.25 DT Serif,Georgia,serif
+}
+
+.draw-prize p {
+    color: #d8c7df;
+    margin: 8px 0;
+    font-size: 1rem
+}
+
+.draw-prize small {
+    color: #a999b2;
+    font-size: .875rem
+}
+
+.draw-entry-layout {
+    grid-template-columns: minmax(0,1.2fr) minmax(0,.8fr);
+    align-items: start;
+    gap: 50px;
+    display: grid
+}
+
+.draw-entry-card {
+    background: linear-gradient(150deg,#ad80c00d,#0e0b12e6);
+    border: 1px solid #b891c33d;
+    border-radius: 15px;
+    padding: 32px;
+    scroll-margin-top: 25px
+}
+
+.draw-entry-card h2,.draw-how h2,.draw-rules>h2 {
+    margin: 14px 0;
+    font: 400 2rem/1.2 DT Serif,Georgia,serif
+}
+
+.draw-entry-card p,.draw-how p {
+    color: #c6bacf;
+    margin: 15px 0
+}
+
+.draw-entry-card form>label,.draw-region>label {
+    color: #dfd2e5;
+    margin: 20px 0 8px;
+    font-size: .875rem;
+    display: block
+}
+
+.draw-entry-card input:not([type=checkbox]),.draw-select {
+    color: #f0e5f6;
+    width: 100%;
+    min-height: 48px;
+    font: inherit;
+    background: #0e0c13;
+    border: 1px solid #7b658855;
+    border-radius: 7px;
+    padding: 12px 14px
+}
+
+.draw-select {
+    white-space: normal;
+    text-align: left
+}
+
+.draw-entry-card input:focus-visible,.draw-select:focus-visible {
+    outline-offset: 3px;
+    outline: 2px solid #c29dd8
+}
+
+.draw-consent-fields {
+    margin: 24px 0
+}
+
+.draw-consent-row {
+    align-items: flex-start;
+    gap: 12px;
+    display: flex
+}
+
+.draw-consent-row [data-slot=checkbox] {
+    border-color: #a98bb8;
+    min-width: 19px;
+    min-height: 19px;
+    margin-top: 4px
+}
+
+.draw-consent-row label {
+    margin: 0;
+    font-size: .875rem;
+    line-height: 1.6
+}
+
+.draw-consent-row a,.draw-how a {
+    color: #debee9;
+    text-underline-offset: 4px;
+    text-decoration: underline
+}
+
+.draw-fine {
+    font-size: .875rem
+}
+
+.draw-entry-card .primary-button {
+    justify-content: space-between;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 22px
+}
+
+.draw-entry-card .primary-button:disabled {
+    opacity: .45;
+    cursor: not-allowed
+}
+
+.draw-trap {
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden
+}
+
+.draw-period-note {
+    background: #b79ac70b;
+    border-left: 2px solid #b79ac7;
+    padding: 14px;
+    font-size: .875rem
+}
+
+.draw-error {
+    color: #fac5d3!important
+}
+
+.draw-how {
+    padding: 10px 0
+}
+
+.draw-how p {
+    margin: 22px 0
+}
+
+.draw-receipt {
+    padding: 20px 0
+}
+
+.draw-receipt>svg {
+    color: #bcdbc9
+}
+
+.draw-receipt h3 {
+    font-size: 1.2rem
+}
+
+.draw-receipt code {
+    overflow-wrap: anywhere;
+    background: #08070c;
+    border: 1px solid #705a7c44;
+    border-radius: 7px;
+    padding: 16px;
+    font-size: .875rem;
+    display: block
+}
+
+.draw-rules {
+    border-top: 1px solid #a985bf33;
+    margin-top: 76px;
+    padding-top: 36px;
+    scroll-margin-top: 28px
+}
+
+.draw-rules>section {
+    margin: 38px 0
+}
+
+.draw-rules h3 {
+    margin: 20px 0;
+    font: 400 1.5rem/1.35 DT Serif,Georgia,serif
+}
+
+.draw-rule-copy {
+    white-space: pre-wrap;
+    color: #c3b9ca;
+    overflow-wrap: anywhere;
+    font-size: 1rem;
+    line-height: 1.85
+}
+
+.draw-footer {
+    color: #c9b2d6;
+    border-top: 1px solid #987eaa33;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 48px;
+    padding-top: 30px;
+    font-size: .875rem;
+    display: flex
+}
+
+.draw-footer a {
+    overflow-wrap: anywhere
+}
+
+.checkout-license .draw-consent-fields label {
+    margin: 0;
+    display: block
+}
+
+.checkout-license .draw-select {
+    font-size: .875rem
+}
+
+.checkout-license .draw-region>label {
+    margin: 12px 0 8px
+}
+
+.checkout-license .draw-consent-row {
+    display: flex
+}
+
+.checkout-license .draw-consent-row label {
+    color: #cfc2d9
+}
+
+.checkout-license .draw-consent-row [data-slot=checkbox] {
+    flex: none
+}
+
+@media (width<=760px) {
+    .draw-page {
+        padding: 24px 20px 125px
+    }
+
+    .draw-heading {
+        padding: 44px 0 28px
+    }
+
+    .draw-prizes {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-bottom: 30px
+    }
+
+    .draw-prize {
+        padding: 22px
+    }
+
+    .draw-prize h2 {
+        margin: 10px 0
+    }
+
+    .draw-entry-layout {
+        grid-template-columns: 1fr;
+        gap: 25px
+    }
+
+    .draw-entry-card {
+        padding: 25px 20px
+    }
+
+    .draw-nav>.signature {
+        font-size: 36px
+    }
+
+    .draw-nav {
+        gap: 14px
+    }
+
+    .draw-rules {
+        margin-top: 38px
+    }
+}
